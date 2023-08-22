@@ -89,7 +89,7 @@ class Predictor(BasePredictor):
         args.ref_pose = None if ref_pose is None else str(ref_pose)
 
         # crop image and extract 3dmm from image
-        results_dir = "results"
+        results_dir = "outputs/SadTalker"
         if os.path.exists(results_dir):
             shutil.rmtree(results_dir)
         os.makedirs(results_dir)
