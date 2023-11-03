@@ -162,9 +162,9 @@ def install():
 def on_ui_tabs():
     install()
 
-    sys.path.extend([paths.script_path+'/extensions/SadTalker']) 
+    sys.path.extend([paths.script_path+'/extensions-builtin/SadTalker']) 
     
-    repo_dir = paths.script_path+'/extensions/SadTalker/'
+    repo_dir = paths.script_path+'/extensions-builtin/SadTalker/'
 
     result_dir = opts.sadtalker_result_dir
     os.makedirs(result_dir, exist_ok=True)
