@@ -81,7 +81,7 @@ def get_img_from_img2img(x):
 def get_default_checkpoint_path():
     # check the path of models/checkpoints and extensions/
     checkpoint_path = Path(paths.script_path) / "models"/ "SadTalker" 
-    extension_checkpoint_path = Path(paths.script_path) / "extensions"/ "SadTalker" / "checkpoints"
+    extension_checkpoint_path = Path(paths.script_path) / "extensions-builtin"/ "SadTalker" / "checkpoints"
 
     if check_all_files_safetensor(checkpoint_path):
         # print('founding sadtalker checkpoint in ' + str(checkpoint_path))
